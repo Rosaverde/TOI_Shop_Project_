@@ -1,0 +1,42 @@
+﻿@page
+@model Shop.UI.Pages.Accounts.ConfigureUsers
+@{
+}
+
+<div id="app" class="conatiner">
+    <div class="columns">
+
+        <div class="column is-3">
+            <h2 class="title">Sign Up</h2>
+            <form method="post">
+                <div class="field">
+                    <p class="control">
+                        <label class="label">Username</label>
+                        <input class="input" asp-for="Input.Username" />
+                    </p>
+                    <span class="help is-danger" asp-validation-for="Input.Username"></span>
+
+                </div>
+                <div class="field">
+                    <p class="control">
+                        <label class="label">Password</label>
+                        <input class="input" type="password" asp-for="Input.Password" />
+                    </p>
+                    <span class="help is-danger" asp-validation-for="Input.Password"></span>
+
+                </div>
+                <div class="field">
+                    <p class="control">
+                        <label class="label">Confirm Password</label>
+                        <input class="input" type="password" asp-for="Input.PasswordConfirmation" />
+                    </p>
+                    <span class="help is-danger" asp-validation-for="Input.PasswordConfirmation"></span>
+
+                </div>
+
+                <button class="button is-success" type="submit">Create User</button>
+            </form>
+        </div>
+    </div>
+</div>
+

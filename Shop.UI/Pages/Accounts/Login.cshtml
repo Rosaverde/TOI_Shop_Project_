@@ -1,0 +1,37 @@
+﻿@page
+@model Shop.UI.Pages.Accounts.LoginModel
+@{
+}
+
+<div class="columns">
+    
+    <div class="column is-3">
+        <h2 class="title">Sign In</h2>
+        <form method="post">
+
+            <div class="field">
+                <p class="control">
+                    <label class="label">Username</label>
+                    <input class="input" asp-for="Input.Username" />
+                </p>
+            </div>
+            <div class="field">
+                <p class="control">
+                    <label class="label">Passworde</label>
+                    <input class="input" type="password" asp-for="Input.Password" />
+                </p>
+            </div>
+
+            <input class="button is-success" type="submit" name="name" value="Sign In">
+
+
+        </form>
+        <div class=" field">
+            <p class="control">
+                <label class="label">No account? </label>
+        <a class="navbar-item button is-info" asp-page="/Accounts/ConfigureUsers">Sign Up</a>
+            </p>
+        </div>
+
+    </div>
+</div>
